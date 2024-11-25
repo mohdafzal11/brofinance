@@ -11,7 +11,6 @@ function Dashboard() {
     ogDescription: "Dashboard description",
     ogUrl: window.location.href,
     ogImage: "https://images.pexels.com/photos/29137971/pexels-photo-29137971/free-photo-of-scenic-autumn-pathway-lined-with-vibrant-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-
   });
 
   // Sample data for the line chart

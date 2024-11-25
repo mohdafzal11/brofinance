@@ -11,6 +11,7 @@ import {
     Tooltip,
     Legend,
 } from 'chart.js';
+import usePage from '../hooks/usePage';
 
 // Register the components
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
@@ -33,6 +34,15 @@ const Backtesting = () => {
         };
         setResults(simulatedResults);
     };
+
+    usePage({
+        title: "Backtesting",
+        description: "Backtesting description",
+        ogTitle: "Backtesting",
+        ogDescription: "Backtesting description",
+        ogUrl: window.location.href,
+        ogImage: "https://images.pexels.com/photos/29137971/pexels-photo-29137971/free-photo-of-scenic-autumn-pathway-lined-with-vibrant-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    });
 
     return (
         <div className="p-4">
