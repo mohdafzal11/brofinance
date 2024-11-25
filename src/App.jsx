@@ -16,8 +16,8 @@ function App() {
   usePage({
     title: "BroFinance",
     description: "Trading platform for algorithmic trading",
-    ogTitle: "BroFinance",
-    ogDescription: "Trading platform for algorithmic trading",
+    ogTitle: "BroFinance App",
+    ogDescription: "Trading platform for algorithmic trading app",
     ogUrl: window.location.href,
     ogImage: "https://images.pexels.com/photos/29137971/pexels-photo-29137971/free-photo-of-scenic-autumn-pathway-lined-with-vibrant-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   });

@@ -4,14 +4,14 @@ import { Line } from 'react-chartjs-2';
 import usePage from '../hooks/usePage';
 
 function Dashboard() {
-//   usePage({
-//     title: "Dashboard",
-//     description: "Dashboard description",
-//     ogTitle: "Dashboard",
-//     ogDescription: "Dashboard description",
-//     ogUrl: window.location.href,
-//     ogImage: "https://images.pexels.com/photos/29137971/pexels-photo-29137971/free-photo-of-scenic-autumn-pathway-lined-with-vibrant-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-//   });
+  usePage({
+    title: "Dashboard",
+    description: "Dashboard description",
+    ogTitle: "Dashboard",
+    ogDescription: "Dashboard description",
+    ogUrl: window.location.href,
+    ogImage: "https://images.pexels.com/photos/29137971/pexels-photo-29137971/free-photo-of-scenic-autumn-pathway-lined-with-vibrant-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  });
 
   // Sample data for the line chart
   const data = {
