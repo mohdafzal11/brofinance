@@ -11,8 +11,17 @@ import TradeExecution from "./pages/TradeExecution";
 import Portfolio from "./pages/Portfolio";
 import SettingsNotifications from "./pages/SettingsNotifications";
 import AppLayout from "./components/AppLayout";
-
+import usePage from "./hooks/usePage";
 function App() {
+  usePage({
+    title: "BroFinance",
+    description: "Trading platform for algorithmic trading",
+    ogTitle: "BroFinance",
+    ogDescription: "Trading platform for algorithmic trading",
+    ogUrl: window.location.href,
+    ogImage: "https://images.pexels.com/photos/29137971/pexels-photo-29137971/free-photo-of-scenic-autumn-pathway-lined-with-vibrant-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  });
+
   return (
     <Router>
       <AppLayout>
