@@ -11,7 +11,6 @@ import TradeExecution from "./pages/TradeExecution";
 import Portfolio from "./pages/Portfolio";
 import SettingsNotifications from "./pages/SettingsNotifications";
 import AppLayout from "./components/AppLayout";
-import OpenGraph from "./OpenGraph";
 
 function App() {
   return (
