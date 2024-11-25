@@ -11,14 +11,16 @@ export const usePage = ({
   useEffect(() => {
     document.title = title;
     setMetaTag("name", "description", description);
-    setMetaTag("property", "og:title", ogTitle || title || "");
-    setMetaTag("property", "og:description", ogDescription || description || "");
-    setMetaTag("property", "og:image", ogImage || "");
-    setMetaTag("property", "og:url", ogUrl || window.location.href);
+    setMetaTag("name", "og:title", ogTitle || title || "");
+    setMetaTag("name", "og:description", ogDescription || description || "");
+    setMetaTag("name", "og:image", ogImage || "");
+    setMetaTag("name", "og:url", ogUrl || window.location.href);
 
     return () => {
       document.title = "";
-      document.querySelector('[name="description"]').removeAttribute("content");
+      document.querySelectorAll("meta").forEach((meta) => {
+        meta.remove();
+      });
     };
   }, [title, description, ogTitle, ogDescription, ogImage, ogUrl]);
 
