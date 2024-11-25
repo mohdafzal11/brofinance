@@ -13,7 +13,7 @@ export const usePage = ({
     setMetaTag("name", "description", description);
     setMetaTag("property", "og:title", ogTitle || title || "");
     setMetaTag("property", "og:description", ogDescription || description || "");
-    // setMetaTag("property", "og:image", ogImage || "");
+    setMetaTag("property", "og:image", ogImage || "");
     setMetaTag("property", "og:url", ogUrl || window.location.href);
 
     return () => {
